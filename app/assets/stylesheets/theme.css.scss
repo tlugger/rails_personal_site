@@ -1,4 +1,5 @@
 $brand-primary: #6E6E6E;
+$button-primary: #2896D1;
 $brand-language: #B01302;
 
 .jumbotron {
@@ -7,10 +8,10 @@ $brand-language: #B01302;
   padding-bottom: 80px;
 
   .btn-primary {
-    background: lighten($brand-primary, 20%);
-    border-color: lighten($brand-primary, 20%);
+    background: lighten($button-primary, 0%);
+    border-color: lighten($button-primary, 0%);
     &:hover {
-      background: lighten($brand-primary, 15%);
+      background: lighten($button-primary, 10%);
     }
   }
 
