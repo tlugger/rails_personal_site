@@ -1,45 +1,54 @@
 <div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="logo">
-      <img src="<%= asset_path('logo.png') %>">
-    </a>
-    <h1>Coffee and Coding</h1>
-    <p>I'm a prospective software engineer. I want to learn, create, and improve.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-ruby"><span class="glyphicon glyphicon-user"></span> Download my resume</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/tlugger"><span class="glyphicon glyphicon-cloud"></span> My GitHub profile</a>
-  </div>
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="<%= asset_path('logo.png') %>">
+        </a>
+        <h1>Coffee and Coding</h1>
+        <p>I'm a prospective software engineer. I want to learn, create, and improve.</p>
+        <%= link_to "Download my resume", welcome_download_pdf_url, :class => "btn btn-lg btn-default" %>
+        <a type="button" class="btn btn-lg btn-primary" href="https://github.com/tlugger"><span class="glyphicon glyphicon-flash"></span> My GitHub profile</a>
+    </div>
 </div>
 <div class="container">
-  <pre>
+    <pre>
     <%= Cowsay.say("Welcome to Tyler Luggers site!") %>
   </pre>
 </div>
 <div class="container">
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> Projects I've worked on</h3>
-      <ul>
-        <li>PyQt GUI tool to assist with research aircraft data loading. </li>
-        <li>Drupal Content Type to help research team communication of project specific information. </li>
-        <li>Drupal block module to create web page citations from Digital Object Identifier associated with publications.</li>
-        <li>Python program to calculate data statistics from NetCDF files. </li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-pencil"></span> Proficient programming languages</h3>
-      <ul>
-        <li>Python</li>
-        <li>C</li>
-        <li>C++</li>
-        <li>Scala</li>
-        <li>PHP</li>
-        <li>HTML</li>
-        <li>JavaScript</li>
-        </ul>
-      </ul>
-      <h3><span class="glyphicon glyphicon-wrench"></span> Tools used</h3>
-      <ul>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>
+                <span class="glyphicon glyphicon-info-sign"></span>
+                Projects I've worked on</h3>
+            <ul>
+                <li>PyQt GUI tool to assist with research aircraft data loading.
+                </li>
+                <li>Drupal Content Type to help research team communication of project specific information.
+                </li>
+                <li>Drupal block module to create web page citations from Digital Object Identifier associated with publications.</li>
+                <li>Python program to calculate data statistics from NetCDF files.
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h3>
+                <span class="glyphicon glyphicon-pencil"></span>
+                Proficient programming languages</h3>
+            <ul>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>Scala</li>
+                <li>PHP</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+            </ul>
+    </ul>
+    <h3>
+        <span class="glyphicon glyphicon-wrench"></span>
+        Tools used</h3>
+    <ul>
         <li>Heroku</li>
         <li>GitHub</li>
         <li>Atom</li>
@@ -49,6 +58,6 @@
         <li>Ruby on Rails</li>
         <li>MySQL</li>
         <li>TravisCI</li>
-      </ul>
-    </div>
+    </ul>
+</div>
 </div>
