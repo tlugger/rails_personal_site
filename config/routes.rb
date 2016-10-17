@@ -8,8 +8,6 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  get 'welcome/download_pdf'
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
