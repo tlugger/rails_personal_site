@@ -1,4 +1,5 @@
 deploy:
+  before_install: rvm install 2.3.1
   provider: heroku
   api_key: 69788e8b-2d1d-416a-bc22-23ae8aca91ce
   app: tylerlugger
