@@ -1,5 +1,5 @@
 deploy:
   provider: heroku
-  api_key:
-    secure: 69788e8b-2d1d-416a-bc22-23ae8aca91ce
+  api_key: 69788e8b-2d1d-416a-bc22-23ae8aca91ce
   app: tylerlugger
+  run: "rake db:migrate"
