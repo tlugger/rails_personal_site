@@ -1,10 +1,10 @@
+languate: ruby
+rvm:
+  - 2.3.1
+before_install: gem update
+install: gem install rails
+run: "rake db:migrate"
 deploy:
-  languate: ruby
-  rvm:
-    - 2.3.1
-  before_install: gem update
-  install: gem install rails
   provider: heroku
   api_key: 69788e8b-2d1d-416a-bc22-23ae8aca91ce
   app: tylerlugger
-  run: "rake db:migrate"
